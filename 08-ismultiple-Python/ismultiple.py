@@ -4,6 +4,8 @@
 # Also, you should make constructive use of the isFactor function you just wrote above.
 
 
-
 def fun_ismultiple(m, n):
-	return False # replace with your solution
+		if((m==n) or (n!=0 and m%n == 0)):
+				return True
+		else:
+			return False
