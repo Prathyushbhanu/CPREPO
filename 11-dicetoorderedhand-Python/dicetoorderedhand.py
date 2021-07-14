@@ -10,6 +10,8 @@
 # assert(dicetoorderedhand(2,2,2) == 222)
 
 
-def dicetoorderedhand(a, b, c):
-	# your code goes here
-	pass
+def diceToOrderedHand(a, b, c):
+    Largest = max(a,b,c)
+    Smallest = min(a,b,c)
+    Medium = a + b + c - Largest - Smallest
+    return Largest * 100 + Medium * 10 + Smallest
