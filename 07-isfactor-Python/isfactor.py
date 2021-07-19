@@ -15,3 +15,4 @@ def fun_isfactor(f, n):
         return True
     else:
         return False
+
