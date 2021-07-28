@@ -11,15 +11,22 @@
 
 
 def fun_applycaesarcipher(msg, shift):
-    	s = ""
+	s = ""
 	for i in range(len(msg)):
+		# print(msg[i])
 		char = msg[i]
-		if(char.isupper()):
-			s += chr((ord(char) + shift -65) % 26 + 65)
-		elif(char == " "):
-			s += " "
+		if(char.islower()):
+			# s += chr((ord(char) + shift - 97) % 26 + 97)
+			s += chr(ord(char) + shift)
 		else:
-			s += chr((ord(char) + shift -97) % 26 + 97)
+			# s += chr((ord(char)+ shift - 65) % 26 + 65)
+			s += chr(ord(char) + shift)
 	return s
+print(fun_applycaesarcipher("xyz", 1)) #bcde
+print(fun_applycaesarcipher("ABC", -1))
+print(fun_applycaesarcipher("aBcD", 1))
+
+
+
 
 
