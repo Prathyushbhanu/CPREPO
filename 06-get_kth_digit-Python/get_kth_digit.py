@@ -5,5 +5,11 @@
 
 
 
-def fun_get_kth_digit(digit, k):
-	return 0
+
+def getKthDigit(digit, k):
+    s=abs(digit)//(10**k)
+    if(s==0):
+        return 0
+    else:
+        return s%10
+print(getKthDigit(int(input()), int(input())))
