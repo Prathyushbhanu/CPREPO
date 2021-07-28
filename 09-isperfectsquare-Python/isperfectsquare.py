@@ -3,6 +3,12 @@
 # it is an int that is a perfect square (that is, if there exists an integer m such that
 # m**2 == n), and False otherwise. Do not crash on non-ints nor on negative ints.
 
+import math
 def isperfectsquare(n):
-	# your code goes here
-	pass
+    a=int(abs(n))
+    r= math.sqrt(a)
+    if int(r+0.5) **2 ==n:
+        return True
+    else:
+        return False 
+
