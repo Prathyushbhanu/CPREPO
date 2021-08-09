@@ -6,7 +6,9 @@
 # balls in that number  of full rows. For example, numberOfPoolBalls(3) returns 6. We will not 
 # limit our analysis to a "rack" of 15 balls. Rather, our pool table can contain an unlimited 
 # number of rows. For this problem and the next, you should research Triangular Numbers.
-
 def numberofpoolballs(rows):
-	# Your code goes here
-	pass
+   # Your code goes here
+   sum = 0
+   for i in range(0,rows+1):
+       sum = sum + i
+   return sum
