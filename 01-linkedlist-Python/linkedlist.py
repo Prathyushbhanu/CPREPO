@@ -72,3 +72,15 @@ class LinkedList(object):
        while current != None:
            print(current.value)
            current =current.next
+e1 = Element(1)
+e2 = Element(2)
+e3 = Element(3)
+e4 = Element(4)
+ll = LinkedList(e1)
+ll.append(e2)
+ll.append(e3)
+ll.insert(e4,1)
+ll.display()
+print("*************")
+ll.delete(2)
+ll.display()
